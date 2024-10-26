@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-13 16:23:04.290497",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "slide_no",
+  "title",
+  "strength",
+  "suggestion",
+  "design_improvements",
+  "section_break_qvlr",
+  "user_feedback",
+  "column_break_freg",
+  "like",
+  "dislike",
+  "user_feedback_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "slide_no",
+   "fieldtype": "Int",
+   "label": "Slide No"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Strength"
+  },
+  {
+   "fieldname": "suggestion",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Suggestion"
+  },
+  {
+   "fieldname": "design_improvements",
+   "fieldtype": "Long Text",
+   "label": "Design Improvements"
+  },
+  {
+   "fieldname": "section_break_qvlr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user_feedback",
+   "fieldtype": "Long Text",
+   "label": "User Feedback"
+  },
+  {
+   "fieldname": "column_break_freg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "like",
+   "fieldtype": "Check",
+   "label": "Like"
+  },
+  {
+   "default": "0",
+   "fieldname": "dislike",
+   "fieldtype": "Check",
+   "label": "Dislike"
+  },
+  {
+   "default": "0",
+   "fieldname": "user_feedback_status",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "User Feedback Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:11:09.760962",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Deck LLM Response",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
