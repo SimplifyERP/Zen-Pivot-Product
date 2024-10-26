@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Investor-CRM-.#####",
+ "creation": "2024-08-31 16:02:04.349654",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "deck_id",
+  "crm_status",
+  "applied_date",
+  "source_of_deal",
+  "sector",
+  "disabled",
+  "column_break_ebql",
+  "deal_name",
+  "pitch_deck_link",
+  "one_page_link",
+  "revenue",
+  "burn",
+  "ask",
+  "crm_shortlisted_delete"
+ ],
+ "fields": [
+  {
+   "fieldname": "deck_id",
+   "fieldtype": "Link",
+   "label": "Deck ID",
+   "options": "Deck Review"
+  },
+  {
+   "fieldname": "crm_status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "CRM Status",
+   "options": "CRM Status"
+  },
+  {
+   "fieldname": "applied_date",
+   "fieldtype": "Date",
+   "label": "Applied Date"
+  },
+  {
+   "fieldname": "source_of_deal",
+   "fieldtype": "Data",
+   "label": "Source of Deal"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sector",
+   "options": "Sector"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "column_break_ebql",
+   "fieldtype": "Column Break",
+   "options": "URL"
+  },
+  {
+   "fieldname": "deal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Deal Name"
+  },
+  {
+   "fieldname": "pitch_deck_link",
+   "fieldtype": "Data",
+   "label": "Pitch Deck Link"
+  },
+  {
+   "fieldname": "one_page_link",
+   "fieldtype": "Data",
+   "label": "One Page Link",
+   "options": "URL"
+  },
+  {
+   "fieldname": "revenue",
+   "fieldtype": "Currency",
+   "label": "Revenue"
+  },
+  {
+   "fieldname": "burn",
+   "fieldtype": "Currency",
+   "label": "Burn"
+  },
+  {
+   "fieldname": "ask",
+   "fieldtype": "Data",
+   "label": "Ask"
+  },
+  {
+   "default": "0",
+   "fieldname": "crm_shortlisted_delete",
+   "fieldtype": "Check",
+   "label": "CRM Shortlisted Delete"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:47.944969",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Investor CRM",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

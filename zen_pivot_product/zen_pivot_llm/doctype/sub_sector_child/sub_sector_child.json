@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-11 12:43:23.339515",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sub_sector_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "sub_sector_table",
+   "fieldtype": "Link",
+   "label": "Sub Sector Table",
+   "options": "Sub Sector"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:58.449228",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Sub Sector Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

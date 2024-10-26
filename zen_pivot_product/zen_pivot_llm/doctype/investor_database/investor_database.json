@@ -1,0 +1,308 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Investor-DB.####",
+ "creation": "2024-09-03 17:10:06.999842",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "investor_details_section",
+  "column_break_ondt",
+  "column_break_uqid",
+  "investor_type__firm_type_",
+  "investor_name",
+  "investor_detail_section",
+  "country",
+  "column_break_ghhk",
+  "company_image",
+  "disabled",
+  "section_break_rvww",
+  "funding_stages",
+  "address_section",
+  "email",
+  "telephone",
+  "fax",
+  "city",
+  "column_break_gcnn",
+  "address_line_1",
+  "address_line_2",
+  "zip_code",
+  "section_break_ymwi",
+  "website",
+  "in_india_since",
+  "management",
+  "column_break_zfhv",
+  "linkedin",
+  "focus_and_capital_source",
+  "other_locations",
+  "section_break_ofty",
+  "assets_under_managementus",
+  "column_break_ylih",
+  "already_invested_managementus",
+  "column_break_rjcp",
+  "dry_powderus",
+  "section_break_phbx",
+  "number_of_funds",
+  "additional_info",
+  "column_break_dwyp",
+  "limited_partners",
+  "industryexisting_investments",
+  "section_break_vvsu",
+  "description",
+  "portfolio_tab",
+  "portfolio"
+ ],
+ "fields": [
+  {
+   "fieldname": "investor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Investor Details"
+  },
+  {
+   "fieldname": "column_break_ondt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uqid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "investor_type__firm_type_",
+   "fieldtype": "Link",
+   "label": "Investor Type ( Firm type )",
+   "options": "Firm Type"
+  },
+  {
+   "fieldname": "investor_name",
+   "fieldtype": "Data",
+   "label": "Investor Name"
+  },
+  {
+   "fieldname": "investor_detail_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "column_break_ghhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_image",
+   "fieldtype": "Attach Image",
+   "label": "Company Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "section_break_rvww",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "funding_stages",
+   "fieldtype": "Table",
+   "label": "Funding Stages",
+   "options": "Stage of Funding Child"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Phone",
+   "label": "Telephone"
+  },
+  {
+   "fieldname": "fax",
+   "fieldtype": "Int",
+   "label": "FAX"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_gcnn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Small Text",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Small Text",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "zip_code",
+   "fieldtype": "Int",
+   "label": "Zip Code"
+  },
+  {
+   "fieldname": "section_break_ymwi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "in_india_since",
+   "fieldtype": "Int",
+   "label": "In India Since"
+  },
+  {
+   "fieldname": "management",
+   "fieldtype": "Data",
+   "label": "Management"
+  },
+  {
+   "fieldname": "column_break_zfhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linkedin",
+   "fieldtype": "Data",
+   "label": "linkedIn"
+  },
+  {
+   "fieldname": "focus_and_capital_source",
+   "fieldtype": "Link",
+   "label": "Focus and Capital Source",
+   "options": "Focus and Captial Source"
+  },
+  {
+   "fieldname": "other_locations",
+   "fieldtype": "Table",
+   "label": "Other Locations",
+   "options": "Other Locations"
+  },
+  {
+   "fieldname": "section_break_ofty",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "assets_under_managementus",
+   "fieldtype": "Float",
+   "label": "Assets Under Management(US)"
+  },
+  {
+   "fieldname": "column_break_ylih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "already_invested_managementus",
+   "fieldtype": "Float",
+   "label": "Already Invested Management(US)"
+  },
+  {
+   "fieldname": "column_break_rjcp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dry_powderus",
+   "fieldtype": "Float",
+   "label": "Dry Powder(US)"
+  },
+  {
+   "fieldname": "section_break_phbx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "number_of_funds",
+   "fieldtype": "Int",
+   "label": "Number of Funds"
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "Long Text",
+   "label": "Additional info"
+  },
+  {
+   "fieldname": "column_break_dwyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "limited_partners",
+   "fieldtype": "Data",
+   "label": "Limited Partners"
+  },
+  {
+   "fieldname": "industryexisting_investments",
+   "fieldtype": "Table",
+   "label": "Industry(Existing Investments)",
+   "options": "Industry Child"
+  },
+  {
+   "fieldname": "section_break_vvsu",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "portfolio_tab",
+   "fieldtype": "Tab Break",
+   "label": "Portfolio"
+  },
+  {
+   "fieldname": "portfolio",
+   "fieldtype": "Table",
+   "label": "Portfolio",
+   "options": "Portfolio"
+  }
+ ],
+ "image_field": "company_image",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Investor Shortlist",
+   "link_fieldname": "investor"
+  }
+ ],
+ "modified": "2024-10-26 12:27:42.770946",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Investor Database",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

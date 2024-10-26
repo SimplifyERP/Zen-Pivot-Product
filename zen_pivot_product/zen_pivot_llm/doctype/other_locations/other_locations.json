@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-12 16:43:37.188556",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "other_locations"
+ ],
+ "fields": [
+  {
+   "fieldname": "other_locations",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Other Locations",
+   "options": "Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:28:03.969610",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Other Locations",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

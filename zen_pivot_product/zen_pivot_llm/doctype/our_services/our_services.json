@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Our-Service-.#####",
+ "creation": "2024-09-03 12:30:53.555675",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service_details_section",
+  "service_item",
+  "service_name",
+  "service_price",
+  "column_break_drss",
+  "customer_group",
+  "service_image",
+  "disabled",
+  "section_break_mipq",
+  "description",
+  "our_documents_tab",
+  "service_documents",
+  "process_steps_tab",
+  "service_process"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "fieldname": "service_item",
+   "fieldtype": "Link",
+   "label": "Service Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "service_item.item_name",
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "label": "Service Name"
+  },
+  {
+   "fieldname": "service_price",
+   "fieldtype": "Currency",
+   "label": "Service Price"
+  },
+  {
+   "fieldname": "column_break_drss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "service_image",
+   "fieldtype": "Attach Image",
+   "label": "Service Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "section_break_mipq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "our_documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Our Documents"
+  },
+  {
+   "fieldname": "service_documents",
+   "fieldtype": "Table",
+   "label": "Service Documents",
+   "options": "Our Services Documents"
+  },
+  {
+   "fieldname": "process_steps_tab",
+   "fieldtype": "Tab Break",
+   "label": "Process Steps"
+  },
+  {
+   "fieldname": "service_process",
+   "fieldtype": "Table",
+   "label": "Service Process",
+   "options": "Our Services Process Steps"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "My Services",
+   "link_fieldname": "our_services"
+  }
+ ],
+ "modified": "2024-10-26 12:27:48.554905",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Our Services",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

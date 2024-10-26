@@ -1,0 +1,369 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Deck-Review-.####",
+ "creation": "2024-08-10 12:23:55.513387",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "get_details_tab",
+  "deck_details_section",
+  "user_idemail",
+  "deck_name",
+  "column_break_kzaq",
+  "current_date",
+  "deck_upload",
+  "deck_pdf_dowload_count",
+  "status_details_section",
+  "get_deck",
+  "get_slide_wise_images",
+  "llm_response",
+  "not_a_pitch_deck",
+  "get_slide_wise_llm_response",
+  "column_break_yvgn",
+  "get_llm_summary",
+  "get_text_extraction",
+  "industry_response",
+  "matched_data",
+  "get_slide_images_tab",
+  "deck_slide_images",
+  "get_llm_response_tab",
+  "open_ai_response_section",
+  "llm_response_text",
+  "no_deck_text",
+  "get_llm_slide_wise_tab",
+  "llm_response_slide_section",
+  "llm_response_slide_wise",
+  "get_summary_tab",
+  "summary_rating_section",
+  "overall_rating",
+  "overall_rating_text",
+  "market_potential",
+  "market_potential_text",
+  "column_break_knqh",
+  "team",
+  "team_text",
+  "product_market_fit",
+  "product_market_fit_text",
+  "summary_text_section",
+  "summary",
+  "most_promising_aspects",
+  "column_break_gzbn",
+  "actionable_suggestions",
+  "get_matched_industry_tab",
+  "matched_industry_response",
+  "get_industry_and_sector_tab",
+  "matched_industry",
+  "amended_from",
+  "get_text_extraction_tab",
+  "text_extraction_section",
+  "deck_text_extraction"
+ ],
+ "fields": [
+  {
+   "fieldname": "get_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get Details"
+  },
+  {
+   "fieldname": "deck_details_section",
+   "fieldtype": "Section Break",
+   "label": "Deck Details"
+  },
+  {
+   "fieldname": "user_idemail",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User ID(Email)",
+   "options": "User"
+  },
+  {
+   "fieldname": "deck_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Deck Name"
+  },
+  {
+   "fieldname": "column_break_kzaq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "current_date",
+   "fieldtype": "Date",
+   "label": "Current Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deck_upload",
+   "fieldtype": "Attach",
+   "label": "Deck Upload"
+  },
+  {
+   "fieldname": "deck_pdf_dowload_count",
+   "fieldtype": "Int",
+   "label": "Deck PDF Dowload Count"
+  },
+  {
+   "fieldname": "status_details_section",
+   "fieldtype": "Section Break",
+   "label": "Status Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_deck",
+   "fieldtype": "Check",
+   "label": "Get Deck"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_slide_wise_images",
+   "fieldtype": "Check",
+   "label": "Get Slide Wise Images"
+  },
+  {
+   "default": "0",
+   "fieldname": "llm_response",
+   "fieldtype": "Check",
+   "label": "LLM Response"
+  },
+  {
+   "default": "0",
+   "fieldname": "not_a_pitch_deck",
+   "fieldtype": "Check",
+   "label": "Not a Pitch Deck"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_slide_wise_llm_response",
+   "fieldtype": "Check",
+   "label": "Get Slide wise LLM Response"
+  },
+  {
+   "fieldname": "column_break_yvgn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_llm_summary",
+   "fieldtype": "Check",
+   "label": "Get LLM Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "get_text_extraction",
+   "fieldtype": "Check",
+   "label": "Get Text Extraction"
+  },
+  {
+   "default": "0",
+   "fieldname": "industry_response",
+   "fieldtype": "Check",
+   "label": "Industry Response"
+  },
+  {
+   "default": "0",
+   "fieldname": "matched_data",
+   "fieldtype": "Check",
+   "label": "Matched Data (Industry & Sector)"
+  },
+  {
+   "fieldname": "get_slide_images_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get Slide Images"
+  },
+  {
+   "fieldname": "deck_slide_images",
+   "fieldtype": "Table",
+   "label": "Deck Slide Images",
+   "options": "Deck Slides"
+  },
+  {
+   "fieldname": "get_llm_response_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get LLM Response"
+  },
+  {
+   "fieldname": "open_ai_response_section",
+   "fieldtype": "Section Break",
+   "label": "Open AI Response"
+  },
+  {
+   "fieldname": "llm_response_text",
+   "fieldtype": "Long Text",
+   "label": "LLM Response Text"
+  },
+  {
+   "fieldname": "no_deck_text",
+   "fieldtype": "Small Text",
+   "label": "No Deck Text"
+  },
+  {
+   "fieldname": "get_llm_slide_wise_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get LLM Slide wise"
+  },
+  {
+   "fieldname": "llm_response_slide_section",
+   "fieldtype": "Section Break",
+   "label": "LLM Response Slide"
+  },
+  {
+   "fieldname": "llm_response_slide_wise",
+   "fieldtype": "Table",
+   "label": "LLM Response Slide Wise",
+   "options": "Deck LLM Response"
+  },
+  {
+   "fieldname": "get_summary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get Summary"
+  },
+  {
+   "fieldname": "summary_rating_section",
+   "fieldtype": "Section Break",
+   "label": "Summary Rating"
+  },
+  {
+   "fieldname": "overall_rating",
+   "fieldtype": "Data",
+   "label": "Overall Rating"
+  },
+  {
+   "fieldname": "overall_rating_text",
+   "fieldtype": "Small Text",
+   "label": "Overall Rating Text"
+  },
+  {
+   "fieldname": "market_potential",
+   "fieldtype": "Data",
+   "label": "Market Potential"
+  },
+  {
+   "fieldname": "market_potential_text",
+   "fieldtype": "Small Text",
+   "label": "Market Potential Text"
+  },
+  {
+   "fieldname": "column_break_knqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Data",
+   "label": "Team"
+  },
+  {
+   "fieldname": "team_text",
+   "fieldtype": "Small Text",
+   "label": "Team Text"
+  },
+  {
+   "fieldname": "product_market_fit",
+   "fieldtype": "Data",
+   "label": "Product Market Fit"
+  },
+  {
+   "fieldname": "product_market_fit_text",
+   "fieldtype": "Small Text",
+   "label": "Product Market Fit Text"
+  },
+  {
+   "fieldname": "summary_text_section",
+   "fieldtype": "Section Break",
+   "label": "Summary Text"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Small Text",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "most_promising_aspects",
+   "fieldtype": "Small Text",
+   "label": "Most Promising Aspects"
+  },
+  {
+   "fieldname": "column_break_gzbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actionable_suggestions",
+   "fieldtype": "Small Text",
+   "label": "Actionable Suggestions"
+  },
+  {
+   "fieldname": "get_matched_industry_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get Matched Industry"
+  },
+  {
+   "fieldname": "matched_industry_response",
+   "fieldtype": "Long Text",
+   "label": "Matched Industry Response"
+  },
+  {
+   "fieldname": "get_industry_and_sector_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get Industry & Sector"
+  },
+  {
+   "fieldname": "matched_industry",
+   "fieldtype": "Table",
+   "label": "Matched Industry",
+   "options": "Matched Industry Child"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Deck Review",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "get_text_extraction_tab",
+   "fieldtype": "Tab Break",
+   "label": "Get Text Extraction"
+  },
+  {
+   "fieldname": "text_extraction_section",
+   "fieldtype": "Section Break",
+   "label": "Text Extraction"
+  },
+  {
+   "fieldname": "deck_text_extraction",
+   "fieldtype": "Long Text",
+   "label": "Deck Text Extraction"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:34.442315",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Deck Review",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

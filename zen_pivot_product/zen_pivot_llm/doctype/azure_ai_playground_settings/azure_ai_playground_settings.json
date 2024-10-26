@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-01 13:34:56.832751",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "parameters_tab",
+  "past_messages_included",
+  "temperature",
+  "frequency_penalty",
+  "column_break_thra",
+  "max_response",
+  "top_p",
+  "presence_penalty"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameters_tab",
+   "fieldtype": "Tab Break",
+   "label": "Parameters"
+  },
+  {
+   "description": "Note : Select the number of past messages to include in each new API request. This helps give the model context for new user queries. Setting this number to 10 will include 5 user queries and 5 system responses.",
+   "fieldname": "past_messages_included",
+   "fieldtype": "Int",
+   "label": "Past messages included "
+  },
+  {
+   "description": "Note : Controls randomness. Lowering the temperature means that the model will produce more repetitive and deterministic responses. Increasing the temperature will result in more unexpected or creative responses. Try adjusting temperature or Top P but not both.",
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "Temperature "
+  },
+  {
+   "description": "Note : Reduce the chance of repeating a token proportionally based on how often it has appeared in the text so far. This decreases the likelihood of repeating the exact same text in a response.",
+   "fieldname": "frequency_penalty",
+   "fieldtype": "Int",
+   "label": "Frequency penalty"
+  },
+  {
+   "fieldname": "column_break_thra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Note : Set a limit on the number of tokens per model response. The supported number of tokens are shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly 4 characters for typical English text.\n",
+   "fieldname": "max_response",
+   "fieldtype": "Int",
+   "label": "Max response"
+  },
+  {
+   "description": "Note : Similar to temperature, this controls randomness but uses a different method. Lowering Top P will narrow the model\u2019s token selection to likelier tokens. Increasing Top P will let the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both",
+   "fieldname": "top_p",
+   "fieldtype": "Float",
+   "label": "Top P"
+  },
+  {
+   "description": "Note : Reduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.",
+   "fieldname": "presence_penalty",
+   "fieldtype": "Int",
+   "label": "Presence penalty"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:37.373865",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Azure AI Playground Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

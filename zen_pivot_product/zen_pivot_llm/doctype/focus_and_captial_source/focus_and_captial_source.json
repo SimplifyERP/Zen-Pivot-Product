@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:focus_and_capital_source",
+ "creation": "2024-09-03 17:31:04.400746",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "focus_and_capital_source",
+  "disabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "focus_and_capital_source",
+   "fieldtype": "Data",
+   "label": "Focus and Capital Source",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:50.079362",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Focus and Captial Source",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

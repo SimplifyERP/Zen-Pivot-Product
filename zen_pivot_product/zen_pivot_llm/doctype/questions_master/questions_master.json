@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Question-.#####",
+ "creation": "2024-09-27 17:25:01.843599",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "risk_type",
+  "column_break_hhnw",
+  "disabled",
+  "question_section_section",
+  "question",
+  "section_break_sgnt",
+  "question_type",
+  "fill_the_blanks_type",
+  "choices_type",
+  "column_break_lrje",
+  "table_options",
+  "choices_and_marks_section",
+  "option_1",
+  "option_2",
+  "option_3",
+  "option_4",
+  "option_5",
+  "column_break_eoml",
+  "score_1",
+  "score_2",
+  "score_3",
+  "score_4",
+  "score_5"
+ ],
+ "fields": [
+  {
+   "fieldname": "risk_type",
+   "fieldtype": "Link",
+   "label": "Risk Type",
+   "options": "Question Risk Type"
+  },
+  {
+   "fieldname": "column_break_hhnw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "question_section_section",
+   "fieldtype": "Section Break",
+   "label": "Question Section"
+  },
+  {
+   "fieldname": "question",
+   "fieldtype": "Long Text",
+   "label": "Question"
+  },
+  {
+   "fieldname": "section_break_sgnt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "question_type",
+   "fieldtype": "Select",
+   "label": "Question Type",
+   "options": "\nFill the Blanks\nChoices"
+  },
+  {
+   "depends_on": "eval:doc.question_type == \"Fill the Blanks\"",
+   "fieldname": "fill_the_blanks_type",
+   "fieldtype": "Select",
+   "label": "Fill the Blanks Type",
+   "options": "\nTable\nData\nINT\nCurrency"
+  },
+  {
+   "depends_on": "eval:doc.question_type ==\"Choices\"",
+   "fieldname": "choices_type",
+   "fieldtype": "Select",
+   "label": "Choices Type",
+   "options": "\nSingle\nMultiselect"
+  },
+  {
+   "fieldname": "column_break_lrje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.fill_the_blanks_type == \"Table\"",
+   "fieldname": "table_options",
+   "fieldtype": "Table",
+   "label": "Table Options",
+   "options": "Questions Type Table"
+  },
+  {
+   "depends_on": "eval:doc.question_type == \"Choices\"",
+   "fieldname": "choices_and_marks_section",
+   "fieldtype": "Section Break",
+   "label": "Choices and Marks"
+  },
+  {
+   "fieldname": "option_1",
+   "fieldtype": "Data",
+   "label": "Option 1"
+  },
+  {
+   "fieldname": "option_2",
+   "fieldtype": "Data",
+   "label": "Option 2"
+  },
+  {
+   "fieldname": "option_3",
+   "fieldtype": "Data",
+   "label": "Option 3"
+  },
+  {
+   "fieldname": "option_4",
+   "fieldtype": "Data",
+   "label": "Option 4"
+  },
+  {
+   "fieldname": "option_5",
+   "fieldtype": "Data",
+   "label": "Option 5"
+  },
+  {
+   "fieldname": "column_break_eoml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "score_1",
+   "fieldtype": "Int",
+   "label": "Score 1"
+  },
+  {
+   "fieldname": "score_2",
+   "fieldtype": "Int",
+   "label": "Score 2"
+  },
+  {
+   "fieldname": "score_3",
+   "fieldtype": "Int",
+   "label": "Score 3"
+  },
+  {
+   "fieldname": "score_4",
+   "fieldtype": "Int",
+   "label": "Score 4"
+  },
+  {
+   "fieldname": "score_5",
+   "fieldtype": "Int",
+   "label": "Score 5"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:44.665422",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Questions Master",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

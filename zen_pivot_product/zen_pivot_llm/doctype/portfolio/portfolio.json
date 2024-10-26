@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-11 12:42:00.371201",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "portfolio_section",
+  "company_name",
+  "industry_name",
+  "sector",
+  "sub_sector",
+  "column_break_umdq",
+  "deal_period",
+  "amount_cr",
+  "amount_m",
+  "exit_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "portfolio_section",
+   "fieldtype": "Section Break",
+   "label": "Portfolio"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "industry_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Industry Name",
+   "options": "Industry Type"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sector",
+   "options": "Sector"
+  },
+  {
+   "fieldname": "sub_sector",
+   "fieldtype": "Link",
+   "label": "Sub Sector",
+   "options": "Sub Sector"
+  },
+  {
+   "fieldname": "column_break_umdq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deal_period",
+   "fieldtype": "Data",
+   "label": "Deal period"
+  },
+  {
+   "fieldname": "amount_cr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount (Cr)"
+  },
+  {
+   "fieldname": "amount_m",
+   "fieldtype": "Currency",
+   "label": "Amount (M)"
+  },
+  {
+   "fieldname": "exit_status",
+   "fieldtype": "Data",
+   "label": "Exit Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:59.695909",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Portfolio",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

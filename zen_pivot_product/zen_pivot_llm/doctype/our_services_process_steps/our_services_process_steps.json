@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-17 15:47:19.491892",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "steps",
+  "tat",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "steps",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Steps"
+  },
+  {
+   "fieldname": "tat",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "TAT"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nUnder Progress\nCompleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:28:03.535716",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Our Services Process Steps",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Vault-.#####",
+ "creation": "2024-09-02 23:06:16.570949",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "disabled",
+  "column_break_qwgu",
+  "vault_name",
+  "section_break_owwa",
+  "description",
+  "tab_2_tab",
+  "file_upload",
+  "invite_people_details_tab",
+  "invite_peoples"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "column_break_qwgu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vault_name",
+   "fieldtype": "Data",
+   "label": "Vault Name"
+  },
+  {
+   "fieldname": "section_break_owwa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "File Upload Details"
+  },
+  {
+   "fieldname": "file_upload",
+   "fieldtype": "Table",
+   "label": "File Upload",
+   "options": "Vault Table"
+  },
+  {
+   "fieldname": "invite_people_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Invite People Details"
+  },
+  {
+   "fieldname": "invite_peoples",
+   "fieldtype": "Table",
+   "label": "Invite Peoples",
+   "options": "Invite People"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:28:01.560309",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Vault",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

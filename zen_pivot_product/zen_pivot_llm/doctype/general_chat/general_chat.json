@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:user",
+ "creation": "2024-10-17 09:42:26.127198",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_details_section",
+  "user",
+  "column_break_ztup",
+  "full_name",
+  "chat_details_section",
+  "general_chat_id",
+  "prompt_type",
+  "column_break_jqbj",
+  "type_of_chat"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_ztup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "chat_details_section",
+   "fieldtype": "Section Break",
+   "label": "Chat Details"
+  },
+  {
+   "fieldname": "general_chat_id",
+   "fieldtype": "Data",
+   "label": "General Chat ID"
+  },
+  {
+   "fieldname": "prompt_type",
+   "fieldtype": "Data",
+   "label": "Prompt Type"
+  },
+  {
+   "fieldname": "column_break_jqbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_chat",
+   "fieldtype": "Data",
+   "label": "Type of Chat"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:37.912282",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "General Chat",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

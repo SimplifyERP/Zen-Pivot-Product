@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:chat_list_name",
+ "creation": "2024-10-15 16:14:34.007895",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "chat_list_name",
+  "column_break_lvmz",
+  "disabled",
+  "discuss_chat_details_section",
+  "discuss_chat",
+  "discuss_questions",
+  "section_break_nyjq",
+  "task_chat",
+  "task_questions",
+  "learn_chat_details_section",
+  "learn_chat",
+  "learn_questions",
+  "discuss_prompt_tab",
+  "discuss_prompt_section_section",
+  "discuss_chat_prompt",
+  "task_prompt_tab",
+  "task_prompt_section_section",
+  "task_chat_prompt",
+  "learn_prompt_tab",
+  "learn_prompt_section_section",
+  "learn_chat_prompt"
+ ],
+ "fields": [
+  {
+   "fieldname": "chat_list_name",
+   "fieldtype": "Data",
+   "label": "Chat List Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_lvmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "discuss_chat_details_section",
+   "fieldtype": "Section Break",
+   "label": "Discuss Chat Details"
+  },
+  {
+   "default": "Discuss",
+   "fieldname": "discuss_chat",
+   "fieldtype": "Data",
+   "label": "Discuss Chat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discuss_questions",
+   "fieldtype": "Table",
+   "label": "Discuss Questions",
+   "options": "Chat Type Questions"
+  },
+  {
+   "fieldname": "section_break_nyjq",
+   "fieldtype": "Section Break",
+   "label": "Task Chat Details"
+  },
+  {
+   "default": "Task",
+   "fieldname": "task_chat",
+   "fieldtype": "Data",
+   "label": "Task Chat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "task_questions",
+   "fieldtype": "Table",
+   "label": "Task Questions",
+   "options": "Chat Type Questions"
+  },
+  {
+   "fieldname": "learn_chat_details_section",
+   "fieldtype": "Section Break",
+   "label": "Learn Chat Details"
+  },
+  {
+   "default": "Learn",
+   "fieldname": "learn_chat",
+   "fieldtype": "Data",
+   "label": "Learn Chat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "learn_questions",
+   "fieldtype": "Table",
+   "label": "Learn Questions",
+   "options": "Chat Type Questions"
+  },
+  {
+   "fieldname": "discuss_prompt_tab",
+   "fieldtype": "Tab Break",
+   "label": "Discuss Prompt"
+  },
+  {
+   "fieldname": "discuss_prompt_section_section",
+   "fieldtype": "Section Break",
+   "label": "Discuss Prompt Section"
+  },
+  {
+   "fieldname": "discuss_chat_prompt",
+   "fieldtype": "Long Text",
+   "label": "Discuss Chat Prompt"
+  },
+  {
+   "fieldname": "task_prompt_tab",
+   "fieldtype": "Tab Break",
+   "label": "Task Prompt"
+  },
+  {
+   "fieldname": "task_prompt_section_section",
+   "fieldtype": "Section Break",
+   "label": "Task Prompt Section"
+  },
+  {
+   "fieldname": "task_chat_prompt",
+   "fieldtype": "Long Text",
+   "label": "Task Chat Prompt"
+  },
+  {
+   "fieldname": "learn_prompt_tab",
+   "fieldtype": "Tab Break",
+   "label": "Learn Prompt"
+  },
+  {
+   "fieldname": "learn_prompt_section_section",
+   "fieldtype": "Section Break",
+   "label": "Learn Prompt Section"
+  },
+  {
+   "fieldname": "learn_chat_prompt",
+   "fieldtype": "Long Text",
+   "label": "Learn Chat Prompt"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:38.929093",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Zen Chat Questions",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
