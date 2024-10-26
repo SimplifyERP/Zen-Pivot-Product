@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PRD-PYT-.####",
+ "creation": "2024-09-21 21:27:12.434710",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rkix",
+  "user",
+  "amended_from",
+  "column_break_ujfu",
+  "full_name",
+  "purchase_details_section",
+  "plan_name",
+  "plan_purchase_date",
+  "payment_status",
+  "column_break_ugkc",
+  "plan_amount",
+  "paid_amount",
+  "payment_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rkix",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Payment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ujfu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "purchase_details_section",
+   "fieldtype": "Section Break",
+   "label": "Purchase Details"
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Plan Name",
+   "options": "Product Subscription Plan"
+  },
+  {
+   "default": "Today",
+   "fieldname": "plan_purchase_date",
+   "fieldtype": "Date",
+   "label": "Plan Purchase Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Data",
+   "label": "Payment Status"
+  },
+  {
+   "fieldname": "column_break_ugkc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan_amount",
+   "fieldtype": "Currency",
+   "label": "Plan Amount"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "payment_id",
+   "fieldtype": "Data",
+   "label": "Payment ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "custom_product_payment"
+  }
+ ],
+ "modified": "2024-10-26 12:27:56.696680",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Product Payment",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{MS}-{service_name}-{#####}",
+ "creation": "2024-09-17 10:23:19.817674",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user_details_section",
+  "user",
+  "column_break_drqy",
+  "full_name",
+  "service_details_section",
+  "our_services",
+  "column_break_hrqz",
+  "service_name",
+  "user_documents_tab",
+  "service_documents",
+  "service_process_tab",
+  "process_steps",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_details_section",
+   "fieldtype": "Section Break",
+   "label": "User Details"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_drqy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "fieldname": "our_services",
+   "fieldtype": "Link",
+   "label": "Our Services",
+   "options": "Our Services"
+  },
+  {
+   "fieldname": "column_break_hrqz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "our_services.service_name",
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "label": "Service Name"
+  },
+  {
+   "fieldname": "user_documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "User Documents"
+  },
+  {
+   "fieldname": "service_documents",
+   "fieldtype": "Table",
+   "label": "Service Documents",
+   "options": "My Service Documents"
+  },
+  {
+   "fieldname": "service_process_tab",
+   "fieldtype": "Tab Break",
+   "label": "Service Process"
+  },
+  {
+   "fieldname": "process_steps",
+   "fieldtype": "Table",
+   "label": "Process Steps",
+   "options": "My Services Process Steps"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "My Services",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "My Service Payment",
+   "link_fieldname": "my_service_id"
+  }
+ ],
+ "modified": "2024-10-26 12:27:47.293823",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "My Services",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

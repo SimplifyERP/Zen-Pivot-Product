@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-15 16:05:37.051067",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "questions",
+  "column_break_pzmg",
+  "with_deck",
+  "column_break_lvde",
+  "without_deck"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "questions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Questions"
+  },
+  {
+   "fieldname": "column_break_pzmg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "with_deck",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "With Deck"
+  },
+  {
+   "fieldname": "column_break_lvde",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "without_deck",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Without Deck"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:39.532077",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Chat Type Questions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

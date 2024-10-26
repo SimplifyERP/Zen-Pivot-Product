@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-30 11:48:21.427692",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "last_updated_on",
+  "section_break_cwwe",
+  "privacy_policy_details"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "last_updated_on",
+   "fieldtype": "Date",
+   "label": "Last updated on"
+  },
+  {
+   "fieldname": "section_break_cwwe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "privacy_policy_details",
+   "fieldtype": "Table",
+   "label": "Privacy Policy Details",
+   "options": "Privacy Policy Table"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:54.416215",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Privacy Policy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

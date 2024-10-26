@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plan_name",
+ "creation": "2024-09-21 17:46:13.407186",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "plan_name",
+  "actual_plan_price",
+  "column_break_dylg",
+  "disabled",
+  "offer_price_status",
+  "offer_price",
+  "customer_group",
+  "section_break_uxdr",
+  "features"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "actual_plan_price",
+   "fieldtype": "Currency",
+   "label": "Actual Plan Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dylg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "offer_price_status",
+   "fieldtype": "Check",
+   "label": "Offer Price Status"
+  },
+  {
+   "depends_on": "eval:doc.offer_price_status == 1",
+   "fieldname": "offer_price",
+   "fieldtype": "Currency",
+   "label": "Offer Price",
+   "mandatory_depends_on": "eval:doc.offer_price_status == 1"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "section_break_uxdr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "features",
+   "fieldtype": "Table",
+   "label": "Features",
+   "options": "Features Table",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Product Payment",
+   "link_fieldname": "plan_name"
+  }
+ ],
+ "modified": "2024-10-26 12:27:57.516400",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Product Subscription Plan",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

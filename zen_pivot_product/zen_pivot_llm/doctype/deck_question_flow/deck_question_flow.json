@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-28 22:24:51.695603",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "question_flow"
+ ],
+ "fields": [
+  {
+   "fieldname": "question_flow",
+   "fieldtype": "Table",
+   "label": "Question Flow",
+   "options": "Questions Flow Table"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:43.487124",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Deck Question Flow",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

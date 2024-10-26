@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-03 17:35:37.626373",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "founders"
+ ],
+ "fields": [
+  {
+   "fieldname": "founders",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Founders",
+   "options": "Founders"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:28:01.161043",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Founders Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

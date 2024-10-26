@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "Investor-FAV-.####",
+ "creation": "2024-09-04 11:58:40.756772",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "move_to_board",
+  "column_break_udkh",
+  "full_name",
+  "investor_details_section",
+  "investor",
+  "investor_status",
+  "column_break_ycea",
+  "investor_name",
+  "disabled",
+  "section_break_wgpd",
+  "contacted_date",
+  "column_break_mquw",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "move_to_board",
+   "fieldtype": "Check",
+   "label": "Move to Board"
+  },
+  {
+   "fieldname": "column_break_udkh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "investor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Investor Details"
+  },
+  {
+   "fieldname": "investor",
+   "fieldtype": "Link",
+   "label": "Investor",
+   "options": "Investor Database"
+  },
+  {
+   "fieldname": "investor_status",
+   "fieldtype": "Select",
+   "label": "Investor Status",
+   "options": "\nShortlisted\nTo be Contacted\nContacted\nPitched\nDiligence\nTerm Sheet\nNegotiating\nSuccessfully Closed\nRejected"
+  },
+  {
+   "fieldname": "column_break_ycea",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "investor.investor_name",
+   "fieldname": "investor_name",
+   "fieldtype": "Data",
+   "label": "Investor Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "section_break_wgpd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contacted_date",
+   "fieldtype": "Date",
+   "label": "Contacted Date"
+  },
+  {
+   "fieldname": "column_break_mquw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Long Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:41.405363",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Investor Shortlist",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

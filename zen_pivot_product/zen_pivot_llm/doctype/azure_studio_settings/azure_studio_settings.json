@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-01 13:50:22.057061",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_2_tab",
+  "system_prompt",
+  "details_tab",
+  "parameters_section",
+  "past_messages_included",
+  "temperature",
+  "frequency_penalty",
+  "column_break_urjb",
+  "max_response",
+  "top_p",
+  "presence_penalty",
+  "text_extraction_prompt_tab",
+  "text_extraction",
+  "text_parameter_settings_tab",
+  "extraction_past_messages_included",
+  "extraction_temperature",
+  "extraction_frequency_penalty",
+  "column_break_lsuk",
+  "extraction_max_response",
+  "extraction_top_p",
+  "extraction_presence_penalty"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Azure System Prompt"
+  },
+  {
+   "fieldname": "system_prompt",
+   "fieldtype": "Long Text",
+   "label": "System Prompt"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Parameters Settings"
+  },
+  {
+   "fieldname": "parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Parameters"
+  },
+  {
+   "description": "Note : \nSelect the number of past messages to include in each new API request. This helps give the model context for new user queries. Setting this number to 10 will include 5 user queries and 5 system responses.\n",
+   "fieldname": "past_messages_included",
+   "fieldtype": "Int",
+   "label": "Past messages included"
+  },
+  {
+   "description": "Note :\nControls randomness. Lowering the temperature means that the model will produce more repetitive and deterministic responses. Increasing the temperature will result in more unexpected or creative responses. Try adjusting temperature or Top P but not both.",
+   "fieldname": "temperature",
+   "fieldtype": "Float",
+   "label": "Temperature"
+  },
+  {
+   "description": "Note :\nReduce the chance of repeating a token proportionally based on how often it has appeared in the text so far. This decreases the likelihood of repeating the exact same text in a response.",
+   "fieldname": "frequency_penalty",
+   "fieldtype": "Int",
+   "label": "Frequency penalty"
+  },
+  {
+   "fieldname": "column_break_urjb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Note :\nSet a limit on the number of tokens per model response. The supported number of tokens are shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly 4 characters for typical English text.",
+   "fieldname": "max_response",
+   "fieldtype": "Int",
+   "label": "Max response"
+  },
+  {
+   "description": "Note : \nSimilar to temperature, this controls randomness but uses a different method. Lowering Top P will narrow the model\u2019s token selection to likelier tokens. Increasing Top P will let the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.",
+   "fieldname": "top_p",
+   "fieldtype": "Float",
+   "label": "Top P"
+  },
+  {
+   "description": "Note :\nReduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.\n",
+   "fieldname": "presence_penalty",
+   "fieldtype": "Int",
+   "label": "Presence penalty"
+  },
+  {
+   "fieldname": "text_extraction_prompt_tab",
+   "fieldtype": "Tab Break",
+   "label": "Text Extraction Prompt"
+  },
+  {
+   "fieldname": "text_extraction",
+   "fieldtype": "Long Text",
+   "label": "Text Extraction"
+  },
+  {
+   "fieldname": "text_parameter_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Text Parameter Settings"
+  },
+  {
+   "fieldname": "extraction_past_messages_included",
+   "fieldtype": "Int",
+   "label": "Extraction Past messages included"
+  },
+  {
+   "fieldname": "extraction_temperature",
+   "fieldtype": "Float",
+   "label": "Extraction Temperature"
+  },
+  {
+   "fieldname": "extraction_frequency_penalty",
+   "fieldtype": "Int",
+   "label": "Extraction Frequency penalty"
+  },
+  {
+   "fieldname": "column_break_lsuk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "extraction_max_response",
+   "fieldtype": "Int",
+   "label": "Extraction Max response"
+  },
+  {
+   "fieldname": "extraction_top_p",
+   "fieldtype": "Float",
+   "label": "Extraction Top P"
+  },
+  {
+   "fieldname": "extraction_presence_penalty",
+   "fieldtype": "Int",
+   "label": "Extraction Presence penalty"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:40.149004",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Azure Studio Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-09 19:14:48.648239",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "parameters_settings_tab",
+  "discuss_chat_parameters_section",
+  "discuss_past_messages_included",
+  "discuss_temperature",
+  "discuss_frequency_penalty",
+  "column_break_iaja",
+  "discuss_max_response",
+  "discuss_top_p",
+  "discuss_presence_penalty",
+  "task_parameters_settings_tab",
+  "task_chat_parameters_section",
+  "task_past_messages_included",
+  "task_temperature",
+  "task_frequency_penalty",
+  "column_break_filh",
+  "task_max_response",
+  "task_top_p",
+  "task_presence_penalty",
+  "learn_parameters_settings_tab",
+  "learn_chat_parameters_section",
+  "learn_past_messages_included",
+  "learn_temperature",
+  "learn_frequency_penalty",
+  "column_break_anpm",
+  "learn_max_response",
+  "learn_top_p",
+  "learn_presence_penalty"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameters_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Discuss Parameters Settings"
+  },
+  {
+   "fieldname": "discuss_chat_parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Discuss Chat Parameters"
+  },
+  {
+   "description": "Note : \nSelect the number of past messages to include in each new API request. This helps give the model context for new user queries. Setting this number to 10 will include 5 user queries and 5 system responses.\n",
+   "fieldname": "discuss_past_messages_included",
+   "fieldtype": "Int",
+   "label": "Discuss Past messages included"
+  },
+  {
+   "description": "Note :\nControls randomness. Lowering the temperature means that the model will produce more repetitive and deterministic responses. Increasing the temperature will result in more unexpected or creative responses. Try adjusting temperature or Top P but not both.",
+   "fieldname": "discuss_temperature",
+   "fieldtype": "Float",
+   "label": "Discuss Temperature"
+  },
+  {
+   "description": "Note :\nReduce the chance of repeating a token proportionally based on how often it has appeared in the text so far. This decreases the likelihood of repeating the exact same text in a response.",
+   "fieldname": "discuss_frequency_penalty",
+   "fieldtype": "Int",
+   "label": "Discuss Frequency penalty"
+  },
+  {
+   "fieldname": "column_break_iaja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Note :\nSet a limit on the number of tokens per model response. The supported number of tokens are shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly 4 characters for typical English text.",
+   "fieldname": "discuss_max_response",
+   "fieldtype": "Int",
+   "label": "Discuss Max response"
+  },
+  {
+   "description": "Note : \nSimilar to temperature, this controls randomness but uses a different method. Lowering Top P will narrow the model\u2019s token selection to likelier tokens. Increasing Top P will let the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.",
+   "fieldname": "discuss_top_p",
+   "fieldtype": "Float",
+   "label": "Discuss Top P"
+  },
+  {
+   "description": "Note :\nReduce the chance of repeating any token that has appeared in the text at all so far. This increases the likelihood of introducing new topics in a response.\n",
+   "fieldname": "discuss_presence_penalty",
+   "fieldtype": "Int",
+   "label": "Discuss Presence penalty"
+  },
+  {
+   "fieldname": "task_parameters_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Task Parameters Settings"
+  },
+  {
+   "fieldname": "task_chat_parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Task Chat Parameters"
+  },
+  {
+   "fieldname": "task_past_messages_included",
+   "fieldtype": "Int",
+   "label": "Task Past messages included"
+  },
+  {
+   "fieldname": "task_temperature",
+   "fieldtype": "Float",
+   "label": "Task Temperature "
+  },
+  {
+   "fieldname": "task_frequency_penalty",
+   "fieldtype": "Int",
+   "label": "Task Frequency penalty"
+  },
+  {
+   "fieldname": "column_break_filh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "task_max_response",
+   "fieldtype": "Int",
+   "label": "Task Max response"
+  },
+  {
+   "fieldname": "task_top_p",
+   "fieldtype": "Float",
+   "label": "Task Top P"
+  },
+  {
+   "fieldname": "task_presence_penalty",
+   "fieldtype": "Int",
+   "label": "Task Presence penalty"
+  },
+  {
+   "fieldname": "learn_parameters_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Learn Parameters Settings"
+  },
+  {
+   "fieldname": "learn_chat_parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Learn Chat Parameters"
+  },
+  {
+   "fieldname": "learn_past_messages_included",
+   "fieldtype": "Int",
+   "label": "Learn Past messages included "
+  },
+  {
+   "fieldname": "learn_temperature",
+   "fieldtype": "Float",
+   "label": "Learn Temperature "
+  },
+  {
+   "fieldname": "learn_frequency_penalty",
+   "fieldtype": "Int",
+   "label": "Learn Frequency Penalty"
+  },
+  {
+   "fieldname": "column_break_anpm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "learn_max_response",
+   "fieldtype": "Int",
+   "label": "Learn Max response"
+  },
+  {
+   "fieldname": "learn_top_p",
+   "fieldtype": "Float",
+   "label": "Learn Top P"
+  },
+  {
+   "fieldname": "learn_presence_penalty",
+   "fieldtype": "Int",
+   "label": "Learn Presence Penalty"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-26 12:27:38.455373",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Zen Chat Prompt Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
