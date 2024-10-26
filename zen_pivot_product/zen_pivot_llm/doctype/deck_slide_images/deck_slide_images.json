@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-11 13:30:18.065116",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "deck_slide_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "deck_slide_image",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Deck Slide Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-26 12:12:51.872193",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "Deck Slide Images",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

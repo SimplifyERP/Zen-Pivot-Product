@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Playground-.#####",
+ "creation": "2024-10-17 17:34:58.035821",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "deck_pdf",
+  "column_break_oipv",
+  "deck_uploaded",
+  "column_break_xwzr",
+  "uploaded_deck_and_slide_images_process",
+  "column_break_stni",
+  "process_azure_api",
+  "azure_system_prompt_section",
+  "system_prompt",
+  "assistant_response",
+  "slide_images_details_tab",
+  "slide_images"
+ ],
+ "fields": [
+  {
+   "fieldname": "deck_pdf",
+   "fieldtype": "Attach",
+   "label": "Deck PDF"
+  },
+  {
+   "fieldname": "column_break_oipv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "deck_uploaded",
+   "fieldtype": "Check",
+   "label": "Deck Uploaded"
+  },
+  {
+   "fieldname": "column_break_xwzr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "uploaded_deck_and_slide_images_process",
+   "fieldtype": "Check",
+   "label": "Uploaded Deck and Slide Images Process"
+  },
+  {
+   "fieldname": "column_break_stni",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "process_azure_api",
+   "fieldtype": "Check",
+   "label": "Process Azure API"
+  },
+  {
+   "fieldname": "azure_system_prompt_section",
+   "fieldtype": "Section Break",
+   "label": "Azure System Prompt"
+  },
+  {
+   "fieldname": "system_prompt",
+   "fieldtype": "Long Text",
+   "label": "System Prompt"
+  },
+  {
+   "fieldname": "assistant_response",
+   "fieldtype": "Long Text",
+   "label": "Assistant Response"
+  },
+  {
+   "fieldname": "slide_images_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Slide Images Details"
+  },
+  {
+   "fieldname": "slide_images",
+   "fieldtype": "Table",
+   "label": "Slide Images",
+   "options": "Deck Slide Images"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-26 12:13:39.372746",
+ "modified_by": "Administrator",
+ "module": "Zen Pivot LLM",
+ "name": "LLM Playground",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
