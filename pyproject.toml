@@ -1,0 +1,20 @@
+[project]
+name = "zen_pivot_product"
+authors = [
+    { name = "Zen Pivot", email = "zenpivot@gmail.com"}
+]
+description = "Deck Review AI is an advanced application that uses AI to provide insightful feedback on presentation decks. It helps improve slide quality and effectiveness by highlighting areas for enhancement and offering constructive suggestions."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
